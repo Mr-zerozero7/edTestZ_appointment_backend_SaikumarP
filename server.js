@@ -6,7 +6,7 @@ const userRoutes = require('./routes/user')
 const appointmentRoutes = require('./routes/appointment')
 
 const app = express();
-const port = process.env.SERVER_PORT || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors());

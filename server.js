@@ -21,7 +21,7 @@ sequelize.sync()
         });
     })
     .catch(err => {
-        console.log('Unable to connect to the database:', err.message)
+        console.log('Unable to connect to the db sync:', err.message)
         console.error('complete details:', err)
     });
 

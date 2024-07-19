@@ -6,7 +6,7 @@ const userRoutes = require('./routes/user')
 const appointmentRoutes = require('./routes/appointment')
 
 const app = express();
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors());
@@ -16,8 +16,8 @@ app.use('/api/appointments', appointmentRoutes);
 
 sequelize.sync()
     .then(()=>{
-        app.listen(port, () => {
-            console.log(`Server running on http://localhost:${port}`)
+        app.listen(PORT, () => {
+            console.log(`Server running on http://localhost:${PORT}`)
         });
     })
     .catch(err => {

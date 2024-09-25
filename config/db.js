@@ -8,9 +8,9 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER,
         dialect: 'postgres',
         port: process.env.DB_PORT,
         connectionTimeoutMillis: 5000
-    }
-);
-
+      }
+    );
+    
 // console.log(process.env.DB_NAME)
 
 sequelize.authenticate().then(() => {

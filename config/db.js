@@ -7,7 +7,7 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER,
         host: process.env.DB_HOST,
         dialect: 'postgres',
         port: process.env.DB_PORT,
-        connectionTimeoutMillis: 2000,
+        connectionTimeoutMillis: 2000
       }
     );
     
